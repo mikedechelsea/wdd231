@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike Asiabaka | WDD 231 Home</title>
+  <meta name="description" content="Course home page for WDD 231 showing my profile, web development skills, and Web and Computer Programming certificate progress.">
+  <meta name="author" content="Mike Asiabaka">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/small.css">
+  <link rel="stylesheet" href="styles/larger.css">
+  <script src="scripts/navigation.js" defer></script>
+  <script src="scripts/date.js" defer></script>
+  <script src="scripts/course.js" defer></script>
+</head>
+<body>
+  <header>
+    <a class="brand" href="index.html">
+      <img src="images/logo.svg" alt="" width="48" height="48">
+      <span>Mike Asiabaka</span>
+    </a>
+    <button id="menu-button" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+    </button>
+    <nav id="primary-nav" aria-label="Main">
+      <ul>
+        <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Home</h1>
+
+    <section class="profile" aria-labelledby="about-heading">
+      <h2 id="about-heading">About Me</h2>
+      <div class="panel">
+        <p>
+      Hello! I'm Mike Asiabaka, a Software Development student at BYU-Pathway, originally
+      from Ile-Ife, Nigeria. I have over five years of experience in data
+      analytics, helping organizations turn raw data into meaningful insights
+      that support better decision-making.
+    </p>
+
+    <p>
+      I'm passionate about bridging the gap between software development
+      and data analytics. My experience spans SQL, Python, Power BI,
+      Tableau, and Google Looker Studio, with a focus on building data
+      pipelines, automating workflows, and creating interactive dashboards
+      that make complex information easier to understand.
+    </p>
+
+    <p>
+      Beyond data analytics, I'm expanding my skills in web development
+      using HTML, CSS, and JavaScript. I enjoy solving problems, exploring
+      new technologies, and building practical solutions that make work
+      more efficient.
+    </p>
+
+    <p>
+      When I'm not working with data or coding, I enjoy spending time
+      with my family, learning new things, and serving in my community.
+      My goal is to combine software development and data analytics
+      to build innovative, accessible, and impactful solutions.
+    </p>
+      </div>
+    </section>
+
+    <section class="photo" aria-labelledby="photo-heading">
+      <h2 id="photo-heading">Student Photo</h2>
+      <div class="panel">
+        <img src="images/profile.jpg" alt="Portrait of Mike Asiabaka" width="300" height="300">
+      </div>
+    </section>
+
+    <section class="certificate" aria-labelledby="cert-heading">
+      <h2 id="cert-heading">Web Certificate Courses</h2>
+      <div class="filters" role="group" aria-label="Filter courses">
+        <button type="button" data-filter="All" class="active" aria-pressed="true">All</button>
+        <button type="button" data-filter="CSE" aria-pressed="false">CSE</button>
+        <button type="button" data-filter="WDD" aria-pressed="false">WDD</button>
+      </div>
+      <ul id="course-list"></ul>
+      <p class="credits">The total credits for course listed above is <strong id="credit-total">0</strong></p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="social">
+      <a href="https://github.com/mikedechelsea" aria-label="GitHub"><img src="images/github.svg" alt="" width="32" height="32"></a>
+      <a href="https://www.linkedin.com/in/your-profile" aria-label="LinkedIn"><img src="images/linkedin.svg" alt="" width="32" height="32"></a>
+      <a href="https://x.com/your-profile" aria-label="X"><img src="images/x.svg" alt="" width="32" height="32"></a>
+    </div>
+    <p>&copy; <span id="currentyear"></span> Mike Asiabaka • Ile-Ife, Nigeria</p>
+    <p id="lastModified"></p>
+  </footer>
+</body>
+</html>
